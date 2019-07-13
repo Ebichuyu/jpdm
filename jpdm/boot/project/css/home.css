@@ -1,0 +1,306 @@
+/* header和footer的媒体查询样式 */
+/* 大屏 */
+.my_header,.my_footer{width:100%}
+@media screen and (min-width: 1200px){
+    .my_header{height: 13rem;}
+    .my_footer{height: 19rem;}
+    .jrtt_border{height: 414px;}
+    .c_1{margin-top: 20px}
+    /* cos栏 */
+    .cos_nr>img{
+        width: 200px;
+        height: 220px;
+    }        
+}
+/* 中屏 */
+@media screen and (max-width: 1200px) and (min-width:990px){
+    .my_header{height: 13rem;}
+    .my_footer{height: 19rem;}
+    .jrtt_border{height: 349px;}
+    .li_1{border-bottom: none!important;}
+    /* cos栏 */
+    .cos_nr>img{
+        width: 170px;
+        height: 125px;
+    }    
+}
+/* 小屏 */
+@media screen and (max-width: 989px){
+    .my_header{display: none;}
+    .my_footer{height: 19rem;}
+    .jrtt{margin-top: 1rem !important;}
+    #ecy_cos_title,#ecy_play_title{
+        display: none;
+    }
+}
+/*轮播的左右箭头*/
+.carousel-control-prev,.carousel-control-next{
+    width:5%;height:15%;
+    background: #d3273e;
+    border-radius: 0.25rem;
+    top:42%;
+}
+/* 今日头条 */
+.jrtt_border{
+    border: 1px solid grey;
+    border-radius: 2%;
+    box-shadow:1px 1px 3px 2px #b0b0b0;
+}
+.jrtt a{
+    font-size: 22px;
+    color: #b0b0b0;
+}
+.jrtt>div ul{
+    margin-left: 30px;
+}
+.jrtt>div ul>li{
+    color:#ff6fa2;
+    font-size: 20px;
+    padding-bottom: 4%;
+    border-bottom: 1px dotted gray;
+}
+.jrtt>div ul>li>a{
+    font-size:16px;
+    font-weight: lighter;
+    color: #000000;
+
+}
+.jrtt>div ul>li>a:hover{
+    font-weight: normal;
+    color: #ff6fa2;
+}
+/* 轮播图下的内容区域 */
+/* 所有标题！！ */
+#gengduo_title,#ecy_zx_title,#ecy_ht_title,#ecy_cos_title,#ecy_mms_title,#ecy_play_title{
+    height: 50px;
+    background: #ff86a5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+
+#gengduo_title>.img2,#ecy_zx_title>.img2{
+    position: absolute;
+    right: 0%;
+}
+
+/*内容模块左边的样式  */
+.nr{
+    border: 1px solid #e5e5e5;
+    border-bottom-left-radius:3%;
+    border-bottom-right-radius:3%;
+}
+.nr>div{
+    border-bottom: 1px solid #e5e5e5;
+    border-width: 80%;
+}
+/* 图片样式 */
+.nr_img{
+    vertical-align: center;
+}
+/* a标签的样式 */
+.nr_a{
+    color: #000000;
+}
+/* a标签的悬停效果 */
+.nr_a:hover{
+    color:#ff86a5;
+}
+
+/* 内容 */
+.nr>div>div>p{
+    font-size: 5px;
+}
+/* 编辑 发布日期为 #398e8e颜色 */
+.nr>div>div>.nr_bj{
+    color:#398e8e;
+}
+
+.nr .nr_bg{
+    background: url(../img/gengduo/tl.png) no-repeat;
+    background-size: 15%;
+    background-position: 100% 0%
+}
+
+.nr .nr_bg1{
+    background: url(../img/gengduo/ty.png) no-repeat;
+    background-size: 15%;
+    background-position: 100% 0%
+}
+
+/* 更多的div样式 */
+.Home-More{
+    padding-top: 25px;
+    text-align: center;
+}
+
+/* 内容下面更多按钮的样式 */
+.Home-More a.LoadMore{
+    background: #f8f8f8
+    url(../img/gengduo/ul_pics/more.png) 118px center no-repeat;
+    text-align: left;
+    text-indent: 45px;
+    display: inline-block;
+    width: 182px;height: 42px;
+    border: 1px solid #c9c9c9;
+    border-radius: 30px;
+    color: #666;
+    font-size: 16px;
+    line-height: 42px;
+}
+
+.Home-More a.LoadMore:hover{
+    color: #ff5400;
+}
+
+/* 右边内容 */
+.carousel-indicators div:hover{
+    cursor:pointer;
+}
+
+#demo1 .lbt{
+    border-radius: 50%;
+}
+
+/* 胶囊导航 */
+.jnli{
+    text-align: center;
+    background: #91c6fd;
+}
+.jnli>a{
+    color: azure !important;
+}
+/* 媒体查询 */
+.mtdx_img{
+    width: 45%;
+}
+.mtdx_title{
+    margin-left: 8px;
+    font-size: 17px;
+    cursor: pointer;
+}
+.mtdx_title:hover{
+    color: #ff86a5 !important;
+}
+
+.mtdx_text{
+    margin-left: 8px;
+    font-size: 14px;
+    color: grey;
+}
+
+.mtdx_a{
+    height: 30px ;
+    overflow: hidden;
+}
+.mtdx_p{
+    margin-top: 15px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.mtdx_n{
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #FF86A5;
+    color: #FDFDFD;
+    margin-right: 10px;
+    padding-left: 10px;
+}
+.mtdx_nc{
+    background-color: #A0DFCE;
+}
+
+/* 二次元资讯模块 */
+#ecy_zx_title{
+    background-color:  #ff9386;
+}
+
+.ecy_zx_pic{
+    position: relative;
+}
+.ecy_zx_pic>div{
+    height: 40px;
+    color: #ffffff;
+    background-color:rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+.ecy_xxzx:hover .ecy_zx_d1{
+    display: block !important;
+}
+
+.ecy_xxzx{
+    position: relative;
+}
+
+.ecy_zx_d1{
+    font-size: 12px;
+    color: #ffffff;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 40%;   
+}
+
+/* 详细资讯标签 */
+.bq_a{
+    height: 20px;
+    font-size: 15px;
+    overflow: hidden;
+}
+
+.bq_a1{
+    color: #da2a0c;
+}
+
+.bq_a2{
+    color:  #757475;
+}
+.bq_a2:hover{
+    color: #ff86a5;
+}
+
+
+
+/* 话题栏 */
+#ecy_ht_title,#ecy_cos_title,#ecy_play_title{
+    background: #7bdfb9;
+}
+/* 话题内容 */
+.ht_nr{
+    font-size: 16px;
+    color: #3f7652;
+    border-bottom: dotted 1px gray !important;
+}
+
+input{
+    color: gray;
+}
+
+.cos_a,.mms_a{
+    font-size: 12px;
+    color: #757475;
+}
+
+.cos_a:hover,.mms_a:hover{
+    color:  #ff86a5;
+}
+
+/* 友情链接 */
+.yqlj_p,.yqlj_li>li{
+    font-size: 15px;
+}
+.yqlj_li>li>a:hover{
+    color: #ff86a5 !important;
+}
+
+
+
+
+
+
+
+

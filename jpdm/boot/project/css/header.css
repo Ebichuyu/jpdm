@@ -1,0 +1,20 @@
+.container > ul > li img {
+  vertical-align: center;
+  animation: pic 0.5s 1 ease-in-out; 
+}
+
+@keyframes pic {
+  0% {transform: rotate(-15deg); }
+  25% {transform: rotate(15deg); }
+  50% {transform: rotate(15deg); }
+  75% {transform: rotate(-15deg); } }
+
+.container > ul > li span {
+  color: #4d4d4d; 
+}
+.container>ul>li:first-child span:hover{color:#ff6fa2}
+.container>ul>li:nth-child(2) span:hover{color:#fd91e5}
+.container>ul>li:nth-child(3) span:hover{color:#e291fd}
+.container>ul>li:nth-child(4) span:hover{color:#91aafd}
+.container>ul>li:nth-child(5) span:hover{color:#8e88fc}
+.container>ul>li:last-child span:hover{color:#86468a}

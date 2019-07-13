@@ -1,0 +1,17 @@
+.footer{
+    background: url('../img/footer/f_bg.png') no-repeat;
+}
+a{
+    text-decoration: none;
+    color: #dcdcdc;
+}
+a:hover{
+    color: #ff6fa2;
+}
+
+.b_a{
+    color: #939393;
+}
+.b_a:hover{
+    color: #939393;
+}
